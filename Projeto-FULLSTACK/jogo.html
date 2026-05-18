@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOMBERMAN</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- IMAGEM ESQUERDA -->
+<div class="rato">
+
+    <h1>PLAYER 1</h1>
+
+    <img src="Imagens/ratao.png" class="personagem">
+
+    <div class="vidas" id="vidasRato">
+        VIDAS: 3
+    </div>
+
+</div>
+
+<!-- CANVAS -->
+<div class="container">
+    
+    <button class="voltar">
+        <a href="menu.html">VOLTAR</a>
+    </button>
+
+    <canvas id="Canvas" width="1050" height="850"></canvas>
+
+</div>
+
+<!-- IMAGEM DIREITA -->
+<div class="gato">
+
+    <div class="vidas" id="vidasGato">
+        VIDAS: 3
+    </div>
+
+    <img src="Imagens/gatao.png" class="personagem">
+
+    <h1>PLAYER 2</h1>
+
+</div>
+
+<div id="telaVitoria">
+
+    <h1 id="textoVitoria"></h1>
+
+    <button onclick="location.reload()">
+        REINICIAR
+    </button>
+
+</div>
+
+<audio id="somExplosao" src="sons/explosao.mp3"></audio>
+<audio id="somPowerUp" src="sons/powerup.mp3"></audio>
+<audio id="musicaFundo" src="sons/fundo.mp3"></audio>
+<audio id="somVitoria" src="sons/vitoria.mp3"></audio>
+
+
+<script src="script.js"></script>
+</body>
+</html>
